@@ -2,12 +2,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-#@app.route('/')
-#def index():
-#    return 'Hello world'
+@app.route('/')
+def index():
+    return 'Hello world'
 
 @app.route('/Home')
-def index():
+def Home():
     #return 'This is Home Automation page'
     return render_template('index.html')
 
